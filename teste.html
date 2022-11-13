@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            min-width: 280px; /*largura da tela de celulares mais antigos, os atuais são mais largos, porém estamos buscando a inclusão de todos os dispositivos. Sem preconceito aqui!*/
+            max-width: 800px; /*meu conteúdo vai ter no máximo 800px, indepente do tamanho da tela. Exemplo: televisão*/
+            margin: auto;
+            text-align: justify;
+        } 
+
+        img {
+            width: 100%;
+        }
+    </style>
+    <title>Responsividade</title>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus delectus, neque nobis aspernatur necessitatibus commodi accusamus temporibus sint? Distinctio dolores vero maxime veritatis deleniti omnis a provident ratione hic blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquam ad quae nostrum? Temporibus aperiam tempora, rerum a est, dolore velit quasi illum esse odio magni accusamus sequi dolor earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ea voluptatibus ut minus ad temporibus accusamus non fuga, illum officia veniam esse accusantium qui sit delectus, quam iure. Accusamus, neque?</p>
+        <picture>
+            <source media="(max-width: 600px )" srcset="imagens/irina-blok-pq.jpg" > <!--Quando a tela for de tamanho 600px no máximo, abre essa foto ao invés da outra -->
+            <img src="imagens/irina-blok.jpg" alt="Irina-Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus delectus, neque nobis aspernatur necessitatibus commodi accusamus temporibus sint? Distinctio dolores vero maxime veritatis deleniti omnis a provident ratione hic blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquam ad quae nostrum? Temporibus aperiam tempora, rerum a est, dolore velit quasi illum esse odio magni accusamus sequi dolor earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ea voluptatibus ut minus ad temporibus accusamus non fuga, illum officia veniam esse accusantium qui sit delectus, quam iure. Accusamus, neque?</p>
+    </main>
+</body>
+</html>
